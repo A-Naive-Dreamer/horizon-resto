@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nav id="main-nav">
+    <ul>
+        <li>
+            <a href="http://localhost/horizon-resto/site/index.php/pages/section/home">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="http://localhost/horizon-resto/site/index.php/pages/section/my-orders">
+                My Orders
+            </a>
+        </li>
+        <li>
+            <a href="http://localhost/horizon-resto/site/index.php/pages/section/booking">
+                Booking
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Others...
+            </a>
+            <ul>
+                <li>
+                    <a href="http://localhost/horizon-resto/site/index.php/pages/section/cashier-table">
+                        Cashier Table
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost/horizon-resto/site/index.php/pages/section/report">
+                        Report
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost/horizon-resto/site/index.php/pages/section/cuisine-menu">
+                        Cuisine Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost/horizon-resto/site/index.php/pages/section/register">
+                        Register
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost/horizon-resto/site/index.php/pages/section/log-in">
+                        Log in
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost/horizon-resto/site/index.php/pages/section/log-out">
+                        Log out
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,754 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsla(0, 0%, 40%, 1.0);
+    background-image: url(http://localhost/horizon-resto/media/pictures/resto.png);
+    background-repeat: repeat;
+    background-size: 43px auto;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border-style: none;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    overflow-x: auto;
+}
+
+.hip-table>thead>tr>th {
+	text-align: center;
+}
+
+.hip-table>thead>tr>th,
+.hip-table>tbody>tr>td {
+	padding: 10px;
+}
+
+.hip-table-chess>thead>tr:nth-child(odd)>th:nth-child(odd) {
+	background: #202020;
+	color: #e0e0e0;
+}
+
+.hip-table-chess>thead>tr:nth-child(odd)>th:nth-child(even) {
+	background: #e0e0e0;
+	color: #202020;
+}
+
+.hip-table-chess>thead>tr:nth-child(even)>th:nth-child(odd) {
+	background: #e0e0e0;
+	color: #202020;
+}
+
+.hip-table-chess>thead>tr:nth-child(even)>th:nth-child(even) {
+	background: #202020;
+	color: #e0e0e0;
+}
+
+.hip-table-chess>tbody>tr:nth-child(odd)>td:nth-child(odd) {
+	background: #ffffff;
+	color: #000000;
+}
+
+.hip-table-chess>tbody>tr:nth-child(odd)>td:nth-child(even) {
+	background: #000000;
+	color: #ffffff;
+}
+
+.hip-table-chess>tbody>tr:nth-child(even)>td:nth-child(odd) {
+	background: #000000;
+	color: #ffffff;
+}
+
+.hip-table-chess>tbody>tr:nth-child(even)>td:nth-child(even) {
+	background: #ffffff;
+	color: #000000;
+}
+
+#main-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+#main-nav > ul > li {
+    float: left;
+    width: 25%;
+}
+
+#main-nav ul li a {
+    background-color: rgba(0, 128, 128, 0.75);
+    background-repeat: repeat;
+    background-size: 250px auto;
+    box-sizing: border-box;
+    color: #00ffff;
+    display: block;
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+#main-nav > ul > li > ul > li {
+    position: relative;
+}
+
+#main-nav > ul > li ul {
+    display: none;
+}
+
+#main-nav > ul > li ul > li > ul {
+    position: absolute;
+    left: 337.25px;
+    top: 0;
+}
+
+#main-nav > ul > li:last-child ul > li > ul {
+    right: 337.25px;
+}
+
+header {
+    padding-top: 43px;
+    width: 100%;
+}
+
+header > #backgrounds {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+}
+
+header > #backgrounds > .background-navs {
+    background-color: rgba(178, 151, 9, 0.75);
+    border-radius: 50%;
+    border-style: none;
+    color: #00ffff;
+    font-weight: 400;
+    font-size: 2em;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+}
+
+header > #backgrounds > .background-navs:nth-child(odd) {
+    left: 10px;
+}
+
+header > #backgrounds > .background-navs:nth-child(even) {
+    right: 10px;
+}
+
+header > #backgrounds > .nav-buttons {
+    background-color: rgba(178, 151, 9, 0.75);
+    border-radius: 50%;
+    height: 10px;
+    margin: 10px;
+    width: 10px;
+}
+
+#title {
+    background-color: #ff19c2;
+    color: hsl(0, 100%, 100%);
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    max-height: 41px;
+    margin-top: -43px;
+    overflow: hidden;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+section {
+    margin: 43px auto 0;
+    width: 80%;
+}
+
+section > main {
+    background-color: hsla(0, 0%, 100%);
+    box-sizing: border-box;
+    float: left;
+    min-height: 1000px;
+    padding: 25px;
+}
+
+section > main > ol {
+    margin-left: 20px;
+}
+
+section > main {
+    width: 100%;
+}
+
+section > main > details, section > main > details {
+    color: blue;
+    margin-bottom: 25px;
+}
+
+section > aside {
+    float: right;
+    width: 100%;
+}
+
+section > aside > .list {
+    height: 50%;
+}
+
+section > aside > .list > .title {
+    background-color: #ff19c2;
+    color: #ffffff;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+.list {
+    min-height: 1000px;
+}
+
+.articles {
+    border-right: 3px solid #202020;
+    border-bottom: 6px solid #202020;
+    border-radius: 25px;
+    margin: 25px auto;
+    min-height: 500px;
+    padding: 20px;
+    width: 80%;
+}
+
+.articles > h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.25em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.articles > img {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.alert-info {
+    background: #0000ff;
+    border-bottom: 6px solid #007bff;
+    border-left: 6px solid #007bff;
+    border-right: 3px solid #007bff;
+    border-top: 3px solid #007bff;
+    border-radius: 10px;
+    color: #007bff;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#people {
+    border-radius: 50%;
+    height: 150px;
+    margin: 0 auto 40px;
+    width: 150px;
+}
+
+main input[type=date] {
+    border: none;
+    border-bottom: 3px dotted #007bff;
+}
+
+main input[type=number] {
+    border: none;
+    border-bottom: 3px dashed #007bff;
+}
+
+main input[type=file] {
+    display: block;
+    margin: 0 auto;
+}
+
+main input[type=text],
+main input[type=email],
+main input[type=password] {
+    border: none;
+    border-bottom: 6px solid #007bff;
+    border-left: 6px solid #007bff;
+    border-right: 3px solid #007bff;
+    border-top: 3px solid #007bff;
+    border-radius: 10px;
+    height: 50px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+main button {
+    background: #00af00;
+    border: none;
+    border-radius: 20%;
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    height: 40px;
+    margin: 25px auto;
+    width: 100px;
+}
+
+main select {
+    background: #007bff;
+    border: none;
+    color: #ffffff;
+}
+
+main .alert-danger {
+    margin: 10px 0;
+}
+
+main button {
+    display: block;
+    margin: 10px auto;
+}
+
+main textarea {
+    border: 3px solid #007bff;
+    border-radius: 10px;
+    width: 80%;
+}
+
+section > aside > .list > .articles {
+    background-color: rgba(0, 128, 128, 0.75);
+    min-height: 250px;
+}
+
+#article-statistic {
+    background-color: hsla(0, 100%, 100%, 1.0);
+    border-top: 3px groove hsl(180, 100%, 30%);
+    box-sizing: border-box;
+    padding: 5px;
+    width: 60%;
+}
+
+footer {
+    background-color: #ff19c2;
+    border-left: 6px solid #00ffff;
+    border-right: 6px solid #00ffff;
+    border-top: 6px solid #00ffff;
+    border-radius:  20px 20px 0 0;
+    box-sizing: border-box;
+    color: #00ffff;
+    font-weight: 700;
+    margin: 25px auto 0;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+#main-nav ul li a:hover {
+    background-color: rgba(0, 98, 98, 1.0);
+}
+
+#main-nav > ul > li:hover > ul {
+    display: block;
+}
+
+#main-nav > ul > li:hover > ul ul {
+    display: none;
+}
+
+#main-nav > ul > li > ul > li:hover ul {
+    display: block;
+}
+
+.background-navs:hover, .nav-buttons:hover {
+    background-color: rgba(148, 121, 9, 1.0);
+}
+
+td:hover {
+    background-color: #808080;
+}
+
+
+a:hover, button:hover, .nav-buttons:hover, submit:hover, reset:hover {
+    cursor: pointer;
+}
+
+@media print {
+    #main-nav {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 280px) {
+    main h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.25em;
+        font-weight: 700;
+        padding: 10px 0;
+        text-align: center;
+    }
+    main h2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2em;
+        font-weight: 700;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    main h2 {
+        font-size: 2em;
+    }
+
+    main h3 {
+        font-size: 1.75em;
+    }
+
+    main h4 {
+        font-size: 1.5em;
+    }
+
+    main h5 {
+        font-size: 1.25em;
+    }
+
+    main h6 {
+        font-size: 1em;
+    }
+
+    main table {
+        border-style: none;
+        display: block;
+        font-size: 1.125em;
+        margin: 20px auto;
+        overflow-x: auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    main table > thead > tr > th{
+        background: lime;
+        font-weight: bolder;
+        padding: 20px 0;
+    }
+
+    main table > tbody > tr:nth-child(odd) {
+        background: white;
+    }
+
+    main table > tbody > tr:nth-child(even) {
+        background: rgb(175,175,175);
+    }
+
+    main table > tbody > tr > td {
+        padding: 20px;
+    }
+
+    main video, main img {
+        border-radius: 10px;
+        border-style: none groove groove none;
+        box-shadow: 5px 5px 10px black;
+        padding: 20px;
+    }
+
+    #hitung {
+        border-top: 3px groove gray;
+    }
+
+    #jumlah {
+        margin: 0 10px;
+    }
+
+    .count {
+        border: none;
+        height: 25px;
+        margin: 0;
+        padding: 0;
+        width: 25px;
+    }
+
+    fieldset {
+        background: white;
+        border: none;
+        border-top: 3px groove blue;
+        color: blue;
+        font-weight: bolder;
+        font-size: 1.125em;
+        margin: 10px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    legend {
+        background: lime;
+        border-radius: 10px;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        width: 140px;
+    }
+
+    fieldset table {
+        width: 100%;
+    }
+
+    fieldset td{
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #commentator-picture {
+        border: none;
+        display: none;
+        height: 0;
+        padding: 0;
+    }
+
+    fieldset img {
+        border: 3px groove blue;
+        overflow: hidden;
+    }
+
+    input[type=text], input[type=email] {
+        border: 3px groove blue;
+        border-radius: 10px;
+        font-size: 18px;
+        height: 24px;
+        width: 400px;
+    }
+
+    fieldset .to {
+        background: lime;
+        border-radius: 25px;
+        box-shadow: 3px 3px 5px black;
+        color: blue;
+        font-weight: bolder;
+        height: 50px;
+        margin: 0 10px;
+        width: 50px;
+    }
+
+    input[type=submit], input[type=reset], button.action {
+        background: lime;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px black;
+        color: blue;
+        font-size: 1.125em;
+        font-weight: 700;
+        height: 50px;
+        margin: 5px;
+        width: 100px;
+    }
+
+    #comments {
+        background: hsla(0, 0%, 100%, 1.0);
+        border-radius: 10px;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #comments > table {
+        border-radius: 10px;
+        margin: 20px auto;
+        min-width: 240px;
+        width: 80%;
+    }
+
+    .description {
+        background: hsla(0, 0%, 100%, 1.0);
+        border-radius: 10px;
+        font-weight: 700;
+        overflow: hidden;
+        padding: 10px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .comment {
+        background-color: hsla(120, 100%, 50%, 1.0);
+        border: 3px groove hsl(180, 100%, 30%);
+        border-radius: 10px;
+    }
+
+    .comment > time {
+        background-color: hsla(180, 100%, 40%, 1.0);
+        box-sizing: border-box;
+        display: block;
+        padding: 10px;
+    }
+
+    .chat {
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .statistic {
+        background-color: hsla(0, 0%, 100%, 1.0);
+        padding: 10px;
+    }
+
+    .comment_box {
+        vertical-align: top;
+        width: auto;
+        word-break: break-all;
+    }
+
+    main table > tbody > tr:hover {
+        background: #0000ff;
+    }
+
+    main video:hover, main img:hover {
+        background: #0000ff;
+        box-shadow: 5px 5px 10px #00bfff;
+    }
+
+    input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, textarea:focus {
+        background: rgb(175,175,175);
+    }
+
+    input[type=submit]:hover, input[type=reset]:hover, button:hover {
+        background:#00bfff;
+    }
+
+}
+
+@media screen and (min-width: 280px) and (max-width: 767px) {
+    #backgrounds {
+        display: none;
+    }
+
+    section {
+        margin-top: 0;
+    }
+
+    header {
+        margin-top: 43px;
+    }
+
+    #title {
+        font-size: 1em;
+    }
+
+    #hitung {
+        border-bottom: 3px groove gray;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #hitung {
+        border-bottom: none;
+    }
+
+    #comments {
+        border: 6px solid lime;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    #comments > table {
+        margin: 20px auto;
+        width: auto;
+    }
+
+    #comments tr td:first-child {
+        display: block;
+    }
+
+    #comments td.comment_box {
+        width: 517px;
+    }
+
+    fieldset input[type=text], fieldset input[type=email] {
+        width: 400px;
+    }
+
+    fieldset textarea {
+        width: 400px;
+    }
+
+    .description {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 1023px) {
+    .list {
+        margin-top: 20px;
+        min-height: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #comments {
+        max-width: 672px;
+        min-width: 0px;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section > main {
+        width: 60%;
+    }
+
+    section > aside {
+        width: 40%;
+    }
+
+    fieldset {
+        border: 6px solid lime;
+        border-radius: 20px;
+        margin: 20px auto;
+        max-width: 1080px;
+        min-width: 820px;
+        width: 80%;
+    }
+
+    legend {
+        background: lime;
+        border-radius: 10px;
+    }
+
+    textarea {
+        height: 200px;
+        width: 400px;
+    }
+
+    #comments {
+        max-width: 1080px;
+        min-width: 820px;
+        padding: 0;
+        width: 80%;
+    }
+}
+
+input[type=submit]:hover {
+    background-color: #00ff00;
+    cursor: pointer;
+}
+.articles:hover {
+    background-color: #007bff;
+}
