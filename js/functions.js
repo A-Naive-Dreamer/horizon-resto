@@ -119,7 +119,7 @@ horizonResto.controller('mainController', function($interval, $scope, $window, B
 
 horizonResto.controller('cuisineMenu', function($http, $scope) {
     $scope.editCuisine = (x) => {
-        location.assign('http://localhost/horizon-resto/site/index.php/pages/section/edit/' + x)
+        location.assign('http://localhost/horizon-resto/site/index.php/pages/section/edit-cuisine/' + x)
     }
     $scope.addCuisine = (x) => {
         location.assign('http://localhost/horizon-resto/site/index.php/pages/section/add-cuisine')
